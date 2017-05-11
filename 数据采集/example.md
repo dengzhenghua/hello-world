@@ -1,7 +1,8 @@
 # 获取图书列表
 
-| url | [https://~/v1/book](https://~/v1/books) | 
+| | |
 | - | - |
+| url | [https://~/v1/book](https://~/v1/books) | 
 | method | GET | 
 
 #### 参数
@@ -11,7 +12,7 @@
 | page | number | N | 当前面码 | - |
 | id | string | Y | 书的编号 | - |
 
-### 回值
+### 返回值
 
 ```javascript
 {
