@@ -8,6 +8,8 @@
 
 - [六度立方体](http://gitlab.hztianque.com/docs/api-docs/tree/master/%E7%AB%8B%E6%96%B9%E4%BD%93)
 
+- [舆情监测](http://gitlab.hztianque.com/docs/api-docs/tree/master/%E7%AB%8B%E6%96%B9%E4%BD%93)
+
 ## 接口文档模版
 
 - [查看Demo](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/example.md)
