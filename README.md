@@ -8,7 +8,9 @@
 
 - [六度立方体](http://gitlab.hztianque.com/docs/api-docs/tree/master/%E7%AB%8B%E6%96%B9%E4%BD%93)
 
-- [舆情监测](http://gitlab.hztianque.com/docs/api-docs/tree/master/%E7%AB%8B%E6%96%B9%E4%BD%93)
+- [舆情监测](http://gitlab.hztianque.com/docs/api-docs/tree/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B)
+
+
 
 ## 接口文档模版
 
