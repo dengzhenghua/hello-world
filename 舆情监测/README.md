@@ -1,7 +1,7 @@
 # 舆情监测API中心
 
 方案管理
-- 方案创建
+- [方案创建](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E6%96%B9%E6%A1%88%E7%AE%A1%E7%90%86.md)
 
 监测配置
 - 监测配置
