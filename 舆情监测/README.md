@@ -17,6 +17,7 @@
 运行配置
 - 采集管理
 - 舆情分类
+- [舆情分类](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E5%88%86%E7%B1%BB.md)
 - 过滤规则
 - 任务调度
 - 任务监控
@@ -26,4 +27,4 @@
 - 角色管理
 - 权限管理
 - 数据字典
-
+- [登录登出](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E7%99%BB%E5%BD%95.md)
