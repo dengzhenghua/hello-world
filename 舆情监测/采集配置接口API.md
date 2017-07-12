@@ -14,7 +14,7 @@
 
 | name | type | mandatory | 描述 | 
 | - | - | - | - | - |
-| crawler.crawlerName | string | Y | 关键字 | 
+| crawler.crawlerName | string | N | 关键字 | 
 
 #### 返回值
 
@@ -178,13 +178,13 @@
 
 | name | type | 描述 |
 | :-: | :-: | :-: |
-| id | Long | Y | 修改数据ID |  
-| crawlerName | string | Y | 爬虫名称 |
-| crawlerFile | string | Y| 配置 |
-| crawlerLabel | Long | N | 标签  |
-| crawlerType | Long | Y | 分类 | 
-| rowkeyPrefix | string | Y | rowkey | 
-| kafkaTopic | string | Y | kafkaTopic | 
+| id | Long | 修改数据ID |  
+| crawlerName | string | 爬虫名称 |
+| crawlerFile | string | 配置 |
+| crawlerLabel | Long  | 标签  |
+| crawlerType | Long | 分类 | 
+| rowkeyPrefix | string  | rowkey | 
+| kafkaTopic | string | kafkaTopic | 
 
 
 ```javascript
@@ -216,7 +216,7 @@
 
 | name | type | mandatory | 描述 | 
 | - | - | - | - | - |
-| crawler.crawlerName | string | Y | 关键字 | 
+| crawler.crawlerName | string | N | 关键字 | 
 
 #### 返回值
 
@@ -380,13 +380,13 @@
 
 | name | type | 描述 |
 | :-: | :-: | :-: |
-| id | Long | Y | 修改数据ID |  
-| crawlerName | string | Y | 爬虫名称 |
-| crawlerLabel | Long | N | 标签  |
-| crawlerType | Long | Y | 分类 | 
-| rowkeyPrefix | string | Y | rowkey | 
-| kafkaTopic | string | Y | kafkaTopic | 
-| collectionType | Long | Y | 类型 | 
+| id | Long | 修改数据ID |  
+| crawlerName | string | 爬虫名称 |
+| crawlerLabel | Long  | 标签  |
+| crawlerType | Long  | 分类 | 
+| rowkeyPrefix | string  | rowkey | 
+| kafkaTopic | string  | kafkaTopic | 
+| collectionType | Long | 类型 | 
 
 
 ```javascript
