@@ -20,9 +20,9 @@
 
 | name | type | 描述 |
 | :-: | :-: | :-: |
-| page | string | 每页数 |
-| total | string | 总页数|
-| records | string | 总条数 |
+| page | int | 每页数 |
+| total | int | 总页数|
+| records | int | 总条数 |
 | rows | object |  |
 
 
@@ -222,9 +222,9 @@
 
 | name | type | 描述 |
 | :-: | :-: | :-: |
-| page | string | 每页数 |
-| total | string | 总页数|
-| records | string | 总条数 |
+| page | int | 每页数 |
+| total | int | 总页数|
+| records | int | 总条数 |
 | rows | object |  |
 
 
