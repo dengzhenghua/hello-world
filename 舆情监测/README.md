@@ -8,16 +8,18 @@
 - [预警配置](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E9%A2%84%E8%AD%A6%E9%85%8D%E7%BD%AE.md)
 
 舆情信息
-- 采集列表
-- 垃圾信息
-- 预警信息
-- 预警废除
+-[采集列表]( http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E9%87%87%E9%9B%86%E5%88%97%E8%A1%A8.md)
+-[采集数据评论](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E9%87%87%E9%9B%86%E6%95%B0%E6%8D%AE%E8%AF%84%E8%AE%BA.md)
+- [垃圾信息](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E5%9E%83%E5%9C%BE%E4%BF%A1%E6%81%AF.md)
+- [预警信息](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E9%A2%84%E8%AD%A6.md)
+- [舆情预警评论](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E9%A2%84%E8%AD%A6%E8%AF%84%E8%AE%BA.md)
+- [预警废除](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E9%A2%84%E8%AD%A6%E5%BA%9F%E9%99%A4.md)
 - 热门分析
 
 运行配置
 - 采集管理
-- 舆情分类
 - [舆情分类](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E5%88%86%E7%B1%BB.md)
+- [类型维护](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E7%B1%BB%E5%9E%8B%E7%BB%B4%E6%8A%A4.md)
 - [过滤规则](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%BF%87%E6%BB%A4%E8%A7%84%E5%88%99.md)
 - 任务策略
 - 任务调度
