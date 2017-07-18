@@ -91,7 +91,7 @@
         "crawlerlabel": 0,
         "crawlertype": 1,
         "rowkeyPrefix": "11",
-        "kafkaTopic": "111"，
+        "kafkaTopic": "111",
         "website": "网站名"
     },
     "errorCode": "null",
@@ -142,7 +142,7 @@
         "crawlerlabel": 22,
         "crawlertype": 2,
         "rowkeyPrefix": "2",
-        "kafkaTopic": "2"，
+        "kafkaTopic": "2",
         "website": "网站名"
     },
     "errorCode": "null",
@@ -251,7 +251,7 @@ message | string | 错误信息
         "crawlerlabel": null,
         "crawlertype": null,
         "rowkeyPrefix": "11",
-        "kafkaTopic": "111"，
+        "kafkaTopic": "111",
         "website": "网站名"
     },
     "errorCode": "500",
