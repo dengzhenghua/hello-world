@@ -39,6 +39,7 @@
                 "crawlerlabel": 1,
                 "crawlertype": 2,
                 "rowkeyPrefix": "213",
+                "website": "网站名",
                 "kafkaTopic": "123111111111111112312"
             }
         ]
@@ -64,6 +65,7 @@
 | crawlerType | Long | Y | 分类 | 
 | rowkeyPrefix | string | Y | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
 | kafkaTopic | string | Y | kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
+| website | string | Y | 网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
 
 #### 返回值
@@ -77,6 +79,7 @@
 | crawlerType | Long | 分类 | 
 | rowkeyPrefix | string | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
 | kafkaTopic | string |  kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
+| website | string |  网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
 ```javascript
 {
@@ -88,7 +91,8 @@
         "crawlerlabel": 0,
         "crawlertype": 1,
         "rowkeyPrefix": "11",
-        "kafkaTopic": "111"
+        "kafkaTopic": "111"，
+        "website": "网站名"
     },
     "errorCode": "null",
     "message": null
@@ -112,6 +116,7 @@
 | crawlerType | Long | Y | 分类 | 
 | rowkeyPrefix | string | Y | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
 | kafkaTopic | string | Y | kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
+| website | string | Y | 网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
 
 #### 返回值
@@ -125,6 +130,7 @@
 | crawlerType | Long | 分类 | 
 | rowkeyPrefix | string | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
 | kafkaTopic | string |  kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
+| website | string |  网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
 ```javascript
 {
@@ -136,7 +142,8 @@
         "crawlerlabel": 22,
         "crawlertype": 2,
         "rowkeyPrefix": "2",
-        "kafkaTopic": "2"
+        "kafkaTopic": "2"，
+        "website": "网站名"
     },
     "errorCode": "null",
     "message": null
@@ -231,6 +238,7 @@ message | string | 错误信息
 | crawlerType | Long | 分类 | 
 | rowkeyPrefix | string  | rowkey | 
 | kafkaTopic | string | kafkaTopic | 
+| website | string | 网站名 | 
 
 
 ```javascript
@@ -243,7 +251,8 @@ message | string | 错误信息
         "crawlerlabel": null,
         "crawlertype": null,
         "rowkeyPrefix": "11",
-        "kafkaTopic": "111"
+        "kafkaTopic": "111"，
+        "website": "网站名"
     },
     "errorCode": "500",
     "message": null
