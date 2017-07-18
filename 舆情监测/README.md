@@ -21,7 +21,7 @@
 - [舆情分类](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E5%88%86%E7%B1%BB.md)
 - [类型维护](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E7%B1%BB%E5%9E%8B%E7%BB%B4%E6%8A%A4.md)
 - [过滤规则](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%BF%87%E6%BB%A4%E8%A7%84%E5%88%99.md)
-- 任务策略
+- [任务策略](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E4%BB%BB%E5%8A%A1%E7%AD%96%E7%95%A5.md)
 - 任务调度
 - 任务监控
 
