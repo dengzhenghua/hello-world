@@ -166,7 +166,7 @@
 
 | name | type | mandatory | 描述 |
 | - | - | - | - | - |
-| id |Long | Y | id |
+| id |List<Long> | Y | id |
 
 
 #### 返回值（操作成功返回信息为空，失败返回以下信息）
