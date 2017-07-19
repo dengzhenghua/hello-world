@@ -14,6 +14,7 @@
 - [预警信息](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E9%A2%84%E8%AD%A6.md)
 - [舆情预警评论](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E9%A2%84%E8%AD%A6%E8%AF%84%E8%AE%BA.md)
 - [预警废除](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E9%A2%84%E8%AD%A6%E5%BA%9F%E9%99%A4.md)
+- [舆情分析](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%88%86%E6%83%85%E5%88%86%E6%9E%90.md)
 - 热门分析
 
 运行配置
