@@ -263,3 +263,85 @@ message | string | 错误信息
     "message": null
 }
 ```
+
+### 1.7 类型下拉框数据字典 
+
+| | |
+| - | - |
+| url | [/systemManage/findPropertyDictByPropertyDomainName](//systemManage/findPropertyDictByPropertyDomainName) | 
+| method | POST | 
+
+#### 参数
+
+| name | type | mandatory | 描述 |
+| - | - | - | - | - |
+| domainName |String | Y | 字典项名称：采集配置-类型 |
+
+
+#### 返回值
+
+| name | type | 描述 |
+| :-: | :-: | :-: |
+| id | Long | ID |  
+| displayName | string | 名称 |
+
+
+```javascript
+[
+    {
+        "id": 10,
+        "displayName": "oracle",
+    },
+    {
+        "id": 11,
+        "displayName": "mysql",
+    }
+]
+```
+
+### 1.8 分类下拉框数据字典 
+
+| | |
+| - | - |
+| url | [/systemManage/findPropertyDictByPropertyDomainName](//systemManage/findPropertyDictByPropertyDomainName) | 
+| method | POST | 
+
+#### 参数
+
+| name | type | mandatory | 描述 |
+| - | - | - | - | - |
+| domainName |String | Y | 字典项名称：采集配置-分类 |
+
+
+#### 返回值
+
+| name | type | 描述 |
+| :-: | :-: | :-: |
+| id | Long | ID |  
+| displayName | string | 名称 |
+
+
+```javascript
+[
+    {
+        "id": 5,
+        "displayName": "微博"
+    },
+    {
+        "id": 6,
+        "displayName": "客户端"
+    },
+    {
+        "id": 7,
+        "displayName": "网站"
+    },
+    {
+        "id": 8,
+        "displayName": "外媒"
+    },
+    {
+        "id": 9,
+        "displayName": "平台（内网）"
+    }
+]
+```
