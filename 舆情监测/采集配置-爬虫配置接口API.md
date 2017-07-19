@@ -282,26 +282,31 @@ message | string | 错误信息
 
 
 ```javascript
-[
-    {
-        "id": 5,
-        "displayName": "微博"
-    },
-    {
-        "id": 6,
-        "displayName": "客户端"
-    },
-    {
-        "id": 7,
-        "displayName": "网站"
-    },
-    {
-        "id": 8,
-        "displayName": "外媒"
-    },
-    {
-        "id": 9,
-        "displayName": "平台（内网）"
-    }
-]
+{
+    "success": true,
+    "data": [
+        {
+            "id": 5,
+            "displayName": "微博",
+        },
+        {
+            "id": 6,
+            "displayName": "客户端",
+        },
+        {
+            "id": 7,
+            "displayName": "网站",
+        },
+        {
+            "id": 8,
+            "displayName": "外媒",
+        },
+        {
+            "id": 9,
+            "displayName": "平台（内网）",
+        }
+    ],
+    "errorCode": null,
+    "message": null
+}
 ```
