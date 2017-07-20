@@ -65,7 +65,7 @@
 | crawlerName | string | Y | 爬虫名称 | 汉字、字母、数字、特殊符号组成，允许输入50个字符 |
 | crawlerLabel | Long | N | 标签  |
 | crawlerType | Long | Y | 分类 | 
-| rowkeyPrefix | string | Y | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | Y | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string | Y | kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | collectionType | Long | Y | 类型 |
 | website | string | Y | 网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
@@ -79,7 +79,7 @@
 | crawlerName | string | 爬虫名称 | 汉字、字母、数字、特殊符号组成，允许输入50个字符 |
 | crawlerLabel | Long |  标签  |
 | crawlerType | Long | 分类 | 
-| rowkeyPrefix | string | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string |kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | collectionType | Long | 类型 |
 | website | string |网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
@@ -117,7 +117,7 @@
 | crawlerName | string | Y | 爬虫名称 | 汉字、字母、数字、特殊符号组成，允许输入50个字符 |
 | crawlerLabel | Long | N | 标签  |
 | crawlerType | Long | Y | 分类 | 
-| rowkeyPrefix | string | Y | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | Y | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string | Y | kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | collectionType | Long | Y | 类型 |
 | website | string | Y | 网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
@@ -132,7 +132,7 @@
 | crawlerName | string | 爬虫名称 | 汉字、字母、数字、特殊符号组成，允许输入50个字符 |
 | crawlerLabel | Long |  标签  |
 | crawlerType | Long | 分类 | 
-| rowkeyPrefix | string | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string |kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | collectionType | Long | 类型 |
 | website | string |网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
@@ -166,7 +166,7 @@
 
 | name | type | mandatory | 描述 |
 | - | - | - | - | - |
-| id |Long | Y | id |
+| id | List Long | Y | id |
 
 
 #### 返回值（操作成功返回信息为空，失败返回以下信息）
@@ -275,7 +275,7 @@ message | string | 错误信息
 
 | name | type | mandatory | 描述 |
 | - | - | - | - | - |
-| domainName |String | Y | 字典项名称：采集配置-类型 |
+| domainName |String | Y | 字典项名称：ACQUISITION_COLLECTIONTYPE=采集配置类型 |
 
 
 #### 返回值
@@ -315,7 +315,7 @@ message | string | 错误信息
 
 | name | type | mandatory | 描述 |
 | - | - | - | - | - |
-| domainName |String | Y | 字典项名称：采集配置-分类 |
+| domainName |String | Y | 字典项名称：ACQUISITION_CRAWLERTYPE=采集配置分类 |
 
 
 #### 返回值
