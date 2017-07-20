@@ -270,7 +270,7 @@ message | string | 错误信息
 
 | name | type | mandatory | 描述 |
 | - | - | - | - | - |
-| domainName |String | Y | 字典项名称：采集配置-分类 |
+| domainName |String | Y | 字典项名称：ACQUISITION_CRAWLERTYPE=采集配置类型 |
 
 
 #### 返回值
