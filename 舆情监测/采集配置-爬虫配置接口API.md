@@ -63,7 +63,7 @@
 | crawlerFile | string | Y| 配置 | 由汉字、字母、数字、特殊符号组成，允许无限输入 |
 | crawlerLabel | Long | N | 标签  |
 | crawlerType | Long | Y | 分类 | 
-| rowkeyPrefix | string | Y | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | Y | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string | Y | kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | website | string | Y | 网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
@@ -77,7 +77,7 @@
 | crawlerFile | string | 配置 | 由汉字、字母、数字、特殊符号组成，允许无限输入 |
 | crawlerLabel | Long | 标签  |
 | crawlerType | Long | 分类 | 
-| rowkeyPrefix | string | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string |  kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | website | string |  网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
@@ -114,7 +114,7 @@
 | crawlerFile | string | Y| 配置 | 由汉字、字母、数字、特殊符号组成，允许无限输入 |
 | crawlerLabel | Long | N | 标签  |
 | crawlerType | Long | Y | 分类 | 
-| rowkeyPrefix | string | Y | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | Y | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string | Y | kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | website | string | Y | 网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
@@ -128,7 +128,7 @@
 | crawlerFile | string | 配置 | 由汉字、字母、数字、特殊符号组成，允许无限输入 |
 | crawlerLabel | Long | 标签  |
 | crawlerType | Long | 分类 | 
-| rowkeyPrefix | string | rowkey | 汉字、字母、数字、特殊符号组成，允许输入4个字符 |
+| rowkeyPrefix | string | rowkey | 数字组成，允许输入4个数字 |
 | kafkaTopic | string |  kafkaTopic | 汉字、字母、数字、特殊符号组成，允许输入100个字符 |
 | website | string |  网站名 | 汉字、字母、数字、特殊符号组成，允许输入500个字符 |
 
@@ -161,7 +161,7 @@
 
 | name | type | mandatory | 描述 |
 | - | - | - | - | - |
-| id |Long | Y | id |
+| id | List Long | Y | id |
 
 
 #### 返回值（操作成功返回信息为空，失败返回以下信息）
@@ -255,6 +255,58 @@ message | string | 错误信息
         "website": "网站名"
     },
     "errorCode": "500",
+    "message": null
+}
+```
+
+### 1.7 分类下拉框数据字典 
+
+| | |
+| - | - |
+| url | [/systemManage/findPropertyDictByPropertyDomainName](//systemManage/findPropertyDictByPropertyDomainName) | 
+| method | POST | 
+
+#### 参数
+
+| name | type | mandatory | 描述 |
+| - | - | - | - | - |
+| domainName |String | Y | 字典项名称：采集配置-分类 |
+
+
+#### 返回值
+
+| name | type | 描述 |
+| :-: | :-: | :-: |
+| id | Long | ID |  
+| displayName | string | 名称 |
+
+
+```javascript
+{
+    "success": true,
+    "data": [
+        {
+            "id": 5,
+            "displayName": "微博",
+        },
+        {
+            "id": 6,
+            "displayName": "客户端",
+        },
+        {
+            "id": 7,
+            "displayName": "网站",
+        },
+        {
+            "id": 8,
+            "displayName": "外媒",
+        },
+        {
+            "id": 9,
+            "displayName": "平台（内网）",
+        }
+    ],
+    "errorCode": null,
     "message": null
 }
 ```
