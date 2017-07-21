@@ -10,7 +10,7 @@
 ## 请求地址
 
 环境	HTTP请求地址
-正式环境	http://XX/api/XX/gateway.do
+正式环境	http://xxx/api/${moduleName}/${interfaceName}/${methodName}.${format}
 ## 公共请求参数
 
 参数 | 类型 | 是否必填 | 最大长度 | 描述 | 示例值

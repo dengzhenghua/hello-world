@@ -3,7 +3,7 @@
 ## 网关接入规范
 
 -  [开发文档](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E7%BB%BC%E6%B2%BB%E6%8E%A5%E5%85%A5%E8%A7%84%E8%8C%83/%E6%B5%99%E6%B1%9F%E7%9C%81%E7%BB%BC%E6%B2%BB%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83.md)
--  API文档
+-  [API文档示例](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E7%BB%BC%E6%B2%BB%E6%8E%A5%E5%85%A5%E8%A7%84%E8%8C%83/API%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3.md)
 
 ## 移动端项目
 
