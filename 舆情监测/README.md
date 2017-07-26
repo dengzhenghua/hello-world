@@ -27,8 +27,8 @@
 - [任务监控](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E4%BB%BB%E5%8A%A1%E7%9B%91%E6%8E%A7.md)
 
 系统管理
-- 用户管理
-- 角色管理
+- [用户管理](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E6%8E%A5%E5%8F%A3API.md)
+- [角色管理](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86%E6%8E%A5%E5%8F%A3API.md)
 - 权限管理
 - 数据字典
 - [登录登出](http://gitlab.hztianque.com/docs/api-docs/blob/master/%E8%88%86%E6%83%85%E7%9B%91%E6%B5%8B/%E7%99%BB%E5%BD%95.md)
