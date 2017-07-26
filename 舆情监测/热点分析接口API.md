@@ -1,24 +1,24 @@
-#  ÈÈµã·ÖÎö
-[TOC]³ğ¿­
-## 1. ÈÈµã·ÖÎö
-### 1.1 ÈÈÃÅÊı¾İÔ´ 
+#  çƒ­ç‚¹åˆ†æ
+[TOC]ä»‡å‡¯
+## 1. çƒ­ç‚¹åˆ†æ
+### 1.1 çƒ­é—¨æ•°æ®æº 
 | | |
 | - | - |
 | url | [/hotSpotAnalysis/countSentimentAnalysiForMap](/hotSpotAnalysis/countSentimentAnalysiForMap) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | 
+| name | type | mandatory | æè¿° | 
 | - | - | - | - | - |
-| programmeId | Long | Y | ·½°¸ID | 
+| programmeId | Long | Y | æ–¹æ¡ˆID | 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| websit | String | ÍøÕ¾ |
-| percent | Double | °Ù·Ö±È|
+| websit | String | ç½‘ç«™ |
+| percent | Double | ç™¾åˆ†æ¯”|
 
 
 ```javascript
@@ -26,10 +26,10 @@
     "success": true,
     "data": [
         {
-            "websit": "ĞÂÀË",
+            "websit": "æ–°æµª",
             "percent": 23.11
         }, {
-            "websit": "ÌÚÑ¶",
+            "websit": "è…¾è®¯",
             "percent": 15.34
         }
     ],
@@ -38,25 +38,25 @@
 }
 ```
 
-### 1.2 ÈÈÃÅÊı¾İÔ´ 
+### 1.2 å¾®åšçƒ­é—¨è´¦å· 
 | | |
 | - | - |
 | url | [/hotSpotAnalysis/findHotMicroblog](/hotSpotAnalysis/findHotMicroblog) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | 
+| name | type | mandatory | æè¿° | 
 | - | - | - | - | - |
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| profileImageUrl | String | Í·Ïñ |
-| screenName | String | ÕËºÅ|
-| followersCount | Long | ·ÛË¿Êı|
-| total | Long | ÎÄÕÂÊı|
+| profileImageUrl | String | å¤´åƒ |
+| screenName | String | è´¦å·|
+| followersCount | Long | ç²‰ä¸æ•°|
+| total | Long | æ–‡ç« æ•°|
 
 
 ```javascript
@@ -65,13 +65,13 @@
     "data": [
         {
             "total": 28519039,
-            "screenName": "ÈËÃñÍø",
+            "screenName": "äººæ°‘ç½‘",
             "profileImageUrl": "https://tva3.sinaimg.cn/crop.1.0.179.179.180/884f7263jw8ev7jo9p7gtj20500500sy.jpg",
             "followersCount": 38628578
         },
         {
             "total": 19482963,
-            "screenName": "³É¶¼ÉÌ±¨",
+            "screenName": "æˆéƒ½å•†æŠ¥",
             "profileImageUrl": "https://tva2.sinaimg.cn/crop.0.0.1000.1000.180/655dd5f3jw8ev7qcyp08ij20rs0rs77h.jpg",
             "followersCount": 9489415
         }
@@ -81,22 +81,22 @@
 }
 ```
 
-### 1.3 ÈÈÃÅ¼à²â´Ê
+### 1.3 çƒ­é—¨ç›‘æµ‹è¯
 | | |
 | - | - |
 | url | [/hotSpotAnalysis/hotKeyWordsAnalysis](/hotSpotAnalysis/hotKeyWordsAnalysis) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | 
+| name | type | mandatory | æè¿° | 
 | - | - | - | - | - |
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| profileImageUrl | Map | keyÃû³Æ£¬valueÖµ |
+| profileImageUrl | Map | keyåç§°ï¼Œvalueå€¼ |
 
 
 ```javascript
@@ -111,26 +111,26 @@
 }
 ```
 
-### 1.4 ÈÈÃÅÊÂ¼ş
+### 1.4 çƒ­é—¨äº‹ä»¶
 | | |
 | - | - |
 | url | [/hotSpotAnalysis/monitorHotIssueAnalysis](/hotSpotAnalysis/monitorHotIssueAnalysis) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | 
+| name | type | mandatory | æè¿° | 
 | - | - | - | - | - |
-| programmeId | Long | N | ´«·½°¸ID²éÑ¯¼à²âÈÈÃÅÊÂ¼ş£¬²»´«²éÑ¯ÆäËüÈÈÃÅÊÂ¼ş | 
+| programmeId | Long | N | ä¼ æ–¹æ¡ˆIDæŸ¥è¯¢ç›‘æµ‹çƒ­é—¨äº‹ä»¶ï¼Œä¸ä¼ æŸ¥è¯¢å…¶å®ƒçƒ­é—¨äº‹ä»¶ | 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| title | String | ±êÌâ |
-| dataSources | Long | Êı¾İÀ´Ô´ |
-| publishDate | Date | ÎÄÕÂµÄ·¢²¼Ê±¼ä |
-| contentText | String | ÎÄÕÂ |
+| title | String | æ ‡é¢˜ |
+| dataSources | Long | æ•°æ®æ¥æº |
+| publishDate | Date | æ–‡ç« çš„å‘å¸ƒæ—¶é—´ |
+| contentText | String | æ–‡ç«  |
 
 
 ```javascript
@@ -142,16 +142,16 @@
         "records": 2,
         "rows":  [
         {
-            "title": "Áõ¹úÁº²»ÔÙµ£ÈÎ×Ü½ÌÁ·",
+            "title": "åˆ˜å›½æ¢ä¸å†æ‹…ä»»æ€»æ•™ç»ƒ",
             "dataSources": "2",
             "publishDate": "2017/7/20 18:24:05",
             "contentText": "qwafdgasdfasfawerwsafds"
         },
         {
-            "title": "Áõ¹úÁº²»ÔÙµ£ÈÎ×Ü½ÌÁ·1",
+            "title": "åˆ˜å›½æ¢ä¸å†æ‹…ä»»æ€»æ•™ç»ƒ1",
             "dataSources": "1",
             "publishDate": "2017/7/20 18:24:05",
-            "contentText": "Áõ¹úÁº²»ÔÙµ£ÈÎ×Ü½ÌÁ·1Áõ¹úÁº²»ÔÙµ£ÈÎ×Ü½ÌÁ·1Áõ¹úÁº²»ÔÙµ£ÈÎ×Ü½ÌÁ·1"
+            "contentText": "åˆ˜å›½æ¢ä¸å†æ‹…ä»»æ€»æ•™ç»ƒ1åˆ˜å›½æ¢ä¸å†æ‹…ä»»æ€»æ•™ç»ƒ1åˆ˜å›½æ¢ä¸å†æ‹…ä»»æ€»æ•™ç»ƒ1"
         }
     ]
     },
