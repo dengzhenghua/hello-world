@@ -1,25 +1,25 @@
-#  ÓÃ»§¹ÜÀí
-[TOC]³ğ¿­
-## 1. ÓÃ»§¹ÜÀí
-### 1.1 ÓÃ»§ÁĞ±í 
+#  ç”¨æˆ·ç®¡ç†
+[TOC]ä»‡å‡¯
+## 1. ç”¨æˆ·ç®¡ç†
+### 1.1 ç”¨æˆ·åˆ—è¡¨ 
 | | |
 | - | - |
 | url | [/user/findAdminUserList](/user/findAdminUserList) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | 
+| name | type | mandatory | æè¿° | 
 | - | - | - | - | - |
-| userName | string | N | ²éÑ¯×Ö¶Î | 
+| userName | string | N | æŸ¥è¯¢å­—æ®µ | 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| page | string | Ã¿Ò³Êı |
-| total | string | ×ÜÒ³Êı|
-| records | string | ×ÜÌõÊı |
+| page | string | æ¯é¡µæ•° |
+| total | string | æ€»é¡µæ•°|
+| records | string | æ€»æ¡æ•° |
 | rows | object |  |
 
 ```javascript
@@ -36,7 +36,7 @@
 					"adminUser": {
 						"id": 11,
 						"userName": "admin3",
-						"name": "¹ÜÀíÔ±",
+						"name": "ç®¡ç†å‘˜",
 						"password": "1bbd886460827015e5d605ed44252251",
 						"mobile": "13111111111",
 						"administrator": true,
@@ -51,7 +51,7 @@
 					"adminUser": {
 						"id": 10,
 						"userName": "admin2",
-						"name": "¹ÜÀíÔ±",
+						"name": "ç®¡ç†å‘˜",
 						"password": "1bbd886460827015e5d605ed44252251",
 						"mobile": "13111111111",
 						"administrator": true,
@@ -66,36 +66,36 @@
     "message": null
 }
 ```
-### 1.2 ĞÂÔö 
+### 1.2 æ–°å¢ 
 | | |
 | - | - |
 | url | [/user/addAdminUser](/user/addAdminUser) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | È¡Öµ·¶Î§ |
+| name | type | mandatory | æè¿° | å–å€¼èŒƒå›´ |
 | - | - | - | - | - |
-| userName | string | Y | ÓÃ»§Ãû | ºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| name | string | Y| ÓÃ»§ĞÕÃû | ÓÉºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| password | String | Y | ÃÜÂë   | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| confirmPwd | String | Y | È·ÈÏÃÜÂë  | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| mobile | String | Y | ÊÖ»ú | Êı×Ö×é³É£¬ÔÊĞíÊäÈë11¸öÊı×Ö |
-| administrator | Boolean | Y | ÏµÍ³¹ÜÀíÔ± |  |
-| roleIdList | string | N | ½ÇÉ«id |
+| userName | string | Y | ç”¨æˆ·å | æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| name | string | Y| ç”¨æˆ·å§“å | ç”±æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| password | String | Y | å¯†ç    | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| confirmPwd | String | Y | ç¡®è®¤å¯†ç   | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| mobile | String | Y | æ‰‹æœº | æ•°å­—ç»„æˆï¼Œå…è®¸è¾“å…¥11ä¸ªæ•°å­— |
+| administrator | Boolean | Y | ç³»ç»Ÿç®¡ç†å‘˜ |  |
+| roleIdList | string | N | è§’è‰²id |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | ĞÂÔöÊı¾İID |
-| userName | string | Y | ÓÃ»§Ãû | ºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| name | string | Y| ÓÃ»§ĞÕÃû | ÓÉºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| password | String | Y | ÃÜÂë   | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| confirmPwd | String | Y | È·ÈÏÃÜÂë  | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| mobile | String | Y | ÊÖ»ú | Êı×Ö×é³É£¬ÔÊĞíÊäÈë11¸öÊı×Ö |
-| administrator | Boolean | Y | ÏµÍ³¹ÜÀíÔ± |  |
+| id | Long | æ–°å¢æ•°æ®ID |
+| userName | string | Y | ç”¨æˆ·å | æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| name | string | Y| ç”¨æˆ·å§“å | ç”±æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| password | String | Y | å¯†ç    | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| confirmPwd | String | Y | ç¡®è®¤å¯†ç   | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| mobile | String | Y | æ‰‹æœº | æ•°å­—ç»„æˆï¼Œå…è®¸è¾“å…¥11ä¸ªæ•°å­— |
+| administrator | Boolean | Y | ç³»ç»Ÿç®¡ç†å‘˜ |  |
 
 ```javascript
 {
@@ -104,7 +104,7 @@
 		"id": 21,
 		"createDate": "2017-07-24 14:52:59",
 		"userName": "cs",
-		"name": "²âÊÔ",
+		"name": "æµ‹è¯•",
 		"password": "1bbd886460827015e5d605ed44252251",
 		"mobile": "13332211122",
 		"administrator": true
@@ -113,38 +113,38 @@
     "message": null
 }
 ```
-### 1.3 ĞŞ¸Ä 
+### 1.3 ä¿®æ”¹ 
 
 | | |
 | - | - |
 | url | [/user/updateAdminUser](/user/updateAdminUser) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | È¡Öµ·¶Î§ |
+| name | type | mandatory | æè¿° | å–å€¼èŒƒå›´ |
 | - | - | - | - | - |
-| id | Long | Y | ĞŞ¸ÄÊı¾İID |  |
-| userName | string | Y | ÓÃ»§Ãû | ºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| name | string | Y| ÓÃ»§ĞÕÃû | ÓÉºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| password | String | Y | ÃÜÂë   | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| confirmPwd | String | Y | È·ÈÏÃÜÂë  | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| mobile | String | Y | ÊÖ»ú | Êı×Ö×é³É£¬ÔÊĞíÊäÈë11¸öÊı×Ö |
-| administrator | Boolean | Y | ÏµÍ³¹ÜÀíÔ± |  |
-| roleIdList | string | N | ½ÇÉ«id |
+| id | Long | Y | ä¿®æ”¹æ•°æ®ID |  |
+| userName | string | Y | ç”¨æˆ·å | æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| name | string | Y| ç”¨æˆ·å§“å | ç”±æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| password | String | Y | å¯†ç    | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| confirmPwd | String | Y | ç¡®è®¤å¯†ç   | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| mobile | String | Y | æ‰‹æœº | æ•°å­—ç»„æˆï¼Œå…è®¸è¾“å…¥11ä¸ªæ•°å­— |
+| administrator | Boolean | Y | ç³»ç»Ÿç®¡ç†å‘˜ |  |
+| roleIdList | string | N | è§’è‰²id |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | ĞÂÔöÊı¾İID |
-| userName | string | Y | ÓÃ»§Ãû | ºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| name | string | Y| ÓÃ»§ĞÕÃû | ÓÉºº×Ö¡¢×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë20¸ö×Ö·û |
-| password | String | Y | ÃÜÂë   | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| confirmPwd | String | Y | È·ÈÏÃÜÂë  | ÓÉ×ÖÄ¸¡¢Êı×ÖÔÊĞíÊäÈë24¸ö×Ö·û |
-| mobile | String | Y | ÊÖ»ú | Êı×Ö×é³É£¬ÔÊĞíÊäÈë11¸öÊı×Ö |
-| administrator | Boolean | Y | ÏµÍ³¹ÜÀíÔ± |  |
+| id | Long | æ–°å¢æ•°æ®ID |
+| userName | string | Y | ç”¨æˆ·å | æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| name | string | Y| ç”¨æˆ·å§“å | ç”±æ±‰å­—ã€å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥20ä¸ªå­—ç¬¦ |
+| password | String | Y | å¯†ç    | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| confirmPwd | String | Y | ç¡®è®¤å¯†ç   | ç”±å­—æ¯ã€æ•°å­—å…è®¸è¾“å…¥24ä¸ªå­—ç¬¦ |
+| mobile | String | Y | æ‰‹æœº | æ•°å­—ç»„æˆï¼Œå…è®¸è¾“å…¥11ä¸ªæ•°å­— |
+| administrator | Boolean | Y | ç³»ç»Ÿç®¡ç†å‘˜ |  |
 
 ```javascript
 {
@@ -153,7 +153,7 @@
 		"id": 21,
 		"createDate": "2017-07-24 14:52:59",
 		"userName": "cs11",
-		"name": "²âÊÔ11",
+		"name": "æµ‹è¯•11",
 		"password": "1bbd886460827015e5d605ed44252251",
 		"mobile": "133322111211",
 		"administrator": true
@@ -163,25 +163,25 @@
 }
 ```
 
-### 1.4 ÑéÖ¤ÓÃ»§ÃûÊÇ·ñ´æÔÚ 
+### 1.4 éªŒè¯ç”¨æˆ·åæ˜¯å¦å­˜åœ¨ 
 | | |
 | - | - |
 | url | [/user/validateAdminUserName](/user/validateAdminUserName) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| id | Long | N | ĞÂÔö²»ÓÃ´«£¬ĞŞ¸ÄĞèÒª´« |
-| userName | String | Y | ÓÃ»§Ãû |
+| id | Long | N | æ–°å¢ä¸ç”¨ä¼ ï¼Œä¿®æ”¹éœ€è¦ä¼  |
+| userName | String | Y | ç”¨æˆ·å |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| data | boolean | false´æÔÚ£¬true²»´æÔÚ |  
+| data | boolean | falseå­˜åœ¨ï¼Œtrueä¸å­˜åœ¨ |  
 
 
 ```javascript
@@ -193,25 +193,25 @@
 }
 ```
 
-### 1.5 »ñÈ¡½ÇÉ«ÁĞ±í 
+### 1.5 è·å–è§’è‰²åˆ—è¡¨ 
 | | |
 | - | - |
 | url | [/role/getRoleList](/role/getRoleList) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
 | id | Long | id |  
-| roleName | String | ½ÇÉ«Ãû³Æ |  
-| description | String | ÃèÊö |  
+| roleName | String | è§’è‰²åç§° |  
+| description | String | æè¿° |  
 
 
 ```javascript
@@ -224,8 +224,8 @@
         "rows": [
             {
                 "id": 1,
-                "roleName": "ÏµÍ³¹ÜÀíÔ±",
-                "description": "ÏµÍ³¹ÜÀíÔ±",
+                "roleName": "ç³»ç»Ÿç®¡ç†å‘˜",
+                "description": "ç³»ç»Ÿç®¡ç†å‘˜",
             },
             {
                 "id": 2,
@@ -239,59 +239,59 @@
 }
 ```
 
-### 1.6 ¶àÌõÊı¾İÉ¾³ı 
+### 1.6 å¤šæ¡æ•°æ®åˆ é™¤ 
 
 | | |
 | - | - |
 | url | [/user/deleteAdminUsers](/user/deleteAdminUsers) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
 | ids | List Long | Y | id |
 
 
-#### ·µ»ØÖµ£¨²Ù×÷³É¹¦·µ»ØĞÅÏ¢Îª¿Õ£¬Ê§°Ü·µ»ØÒÔÏÂĞÅÏ¢£©
+#### è¿”å›å€¼ï¼ˆæ“ä½œæˆåŠŸè¿”å›ä¿¡æ¯ä¸ºç©ºï¼Œå¤±è´¥è¿”å›ä»¥ä¸‹ä¿¡æ¯ï¼‰
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| errorCode | string | ´íÎó±àÂë |
-| expLevel | string | ´íÎóµÈ¼¶ |
-| message | string | ´íÎóĞÅÏ¢ |
+| errorCode | string | é”™è¯¯ç¼–ç  |
+| expLevel | string | é”™è¯¯ç­‰çº§ |
+| message | string | é”™è¯¯ä¿¡æ¯ |
 
 
 ```javascript
 {
     "success": true,
-    "data": "²Ù×÷³É¹¦£¡",
+    "data": "æ“ä½œæˆåŠŸï¼",
     "errorCode": "",
     "message": ""
 }
 ```
 
-### 1.7 µ¥ÌõÊı¾İÉ¾³ı 
+### 1.7 å•æ¡æ•°æ®åˆ é™¤ 
 
 | | |
 | - | - |
 | url | [/user/deleteAdminUserById](/user/deleteAdminUserById) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
 | id |Long | Y | id |
 
 
-#### ·µ»ØÖµ£¨²Ù×÷³É¹¦·µ»ØĞÅÏ¢Îª¿Õ£¬Ê§°Ü·µ»ØÒÔÏÂĞÅÏ¢£©
+#### è¿”å›å€¼ï¼ˆæ“ä½œæˆåŠŸè¿”å›ä¿¡æ¯ä¸ºç©ºï¼Œå¤±è´¥è¿”å›ä»¥ä¸‹ä¿¡æ¯ï¼‰
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-success | boolean | ³É¹¦Óë·ñ
-errorCode | string | ´íÎó±àÂë
-message | string | ´íÎóĞÅÏ¢
+success | boolean | æˆåŠŸä¸å¦
+errorCode | string | é”™è¯¯ç¼–ç 
+message | string | é”™è¯¯ä¿¡æ¯
 
 ```javascript
 {
@@ -302,31 +302,31 @@ message | string | ´íÎóĞÅÏ¢
 }
 ```
 
-### 1.8 µ¥Ìõ²éÑ¯ 
+### 1.8 å•æ¡æŸ¥è¯¢ 
 
 | | |
 | - | - |
 | url | [/user/gotoEditPage](/user/gotoEditPage) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| id |Long | Y | ¸ü¾ßÊı¾İID²éÑ¯ |
+| id |Long | Y | æ›´å…·æ•°æ®IDæŸ¥è¯¢ |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | Êı¾İID |  
-| userName | string | ÓÃ»§Ãû³Æ |
-| name | string | ÓÃ»§Ãû³Æ |
-| password | String  | ÃÜÂë  |
-| mobile | String | µç»° | 
-| administrator | boolean  | ÊÇ·ñ¹ÜÀíÔ± | 
-| roleIdList | String | ½ÇÉ«id | 
+| id | Long | æ•°æ®ID |  
+| userName | string | ç”¨æˆ·åç§° |
+| name | string | ç”¨æˆ·åç§° |
+| password | String  | å¯†ç   |
+| mobile | String | ç”µè¯ | 
+| administrator | boolean  | æ˜¯å¦ç®¡ç†å‘˜ | 
+| roleIdList | String | è§’è‰²id | 
 
 
 ```javascript
@@ -338,7 +338,7 @@ message | string | ´íÎóĞÅÏ¢
         "adminUser": {
             "id": 1,
             "userName": "admin",
-            "name": "¹ÜÀíÔ±",
+            "name": "ç®¡ç†å‘˜",
             "password": "1bbd886460827015e5d605ed44252251",
             "mobile": "13111111111",
             "administrator": true
@@ -350,30 +350,32 @@ message | string | ´íÎóĞÅÏ¢
 }
 ```
 
-### 1.9 ÖØÖÃÃÜÂë 
+### 1.9 é‡ç½®å¯†ç  
 
 | | |
 | - | - |
-| url | [/user/gotoRetPasswordPage](/user/gotoRetPasswordPage) | 
+| url | [/user/updateAdminUser](/user/updateAdminUser) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| id | Long | Y | Êı¾İID |
+| id | Long | Y | æ•°æ®ID |
+| password | String  | å¯†ç   |
+| confirmPwd | String  | ç¡®è®¤å¯†ç   |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | Êı¾İID |  
-| userName | string | ÓÃ»§Ãû³Æ |
-| name | string | ÓÃ»§Ãû³Æ |
-| password | String  | ÃÜÂë  |
-| mobile | String | µç»° | 
-| administrator | boolean  | ÊÇ·ñ¹ÜÀíÔ± | 
+| id | Long | æ•°æ®ID |  
+| userName | string | ç”¨æˆ·åç§° |
+| name | string | ç”¨æˆ·åç§° |
+| password | String  | å¯†ç   |
+| mobile | String | ç”µè¯ | 
+| administrator | boolean  | æ˜¯å¦ç®¡ç†å‘˜ | 
 
 
 ```javascript
@@ -382,7 +384,7 @@ message | string | ´íÎóĞÅÏ¢
     "data": {
         "id": 4,
         "userName": "byj",
-        "name": "¹ÜÀíÔ±",
+        "name": "ç®¡ç†å‘˜",
         "password": "1bbd886460827015e5d605ed44252251",
         "mobile": "13111111111",
         "administrator": true,
@@ -392,30 +394,30 @@ message | string | ´íÎóĞÅÏ¢
 }
 ```
 
-### 1.10 ²é¿´ 
+### 1.10 æŸ¥çœ‹ 
 | | |
 | - | - |
 | url | [/user/gotoViewPage](/user/gotoViewPage) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| id | Long | Y | Êı¾İID |
+| id | Long | Y | æ•°æ®ID |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | Êı¾İID |  
-| userName | string | ÓÃ»§Ãû³Æ |
-| name | string | ÓÃ»§Ãû³Æ |
-| password | String  | ÃÜÂë  |
-| mobile | String | µç»° | 
-| administrator | boolean  | ÊÇ·ñ¹ÜÀíÔ± | 
-| roleIdList | String  | ½ÇÉ«id | 
+| id | Long | æ•°æ®ID |  
+| userName | string | ç”¨æˆ·åç§° |
+| name | string | ç”¨æˆ·åç§° |
+| password | String  | å¯†ç   |
+| mobile | String | ç”µè¯ | 
+| administrator | boolean  | æ˜¯å¦ç®¡ç†å‘˜ | 
+| roleIdList | String  | è§’è‰²id | 
 
 
 ```javascript
@@ -427,7 +429,7 @@ message | string | ´íÎóĞÅÏ¢
         "adminUser": {
             "id": 1,
             "userName": "admin",
-            "name": "¹ÜÀíÔ±",
+            "name": "ç®¡ç†å‘˜",
             "password": "1bbd886460827015e5d605ed44252251",
             "mobile": "13111111111",
             "administrator": true
@@ -439,26 +441,26 @@ message | string | ´íÎóĞÅÏ¢
 }
 ```
 
-### 1.11 ²é¿´Ê±»ñÈ¡½ÇÉ« 
+### 1.11 æŸ¥çœ‹æ—¶è·å–è§’è‰² 
 | | |
 | - | - |
 | url | [/role/getAdminUserRoleList](/role/getAdminUserRoleList) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| roleIdList | String | Y | ½ÇÉ«ID |
+| roleIdList | String | Y | è§’è‰²ID |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | Êı¾İID |  
-| roleName | String | ½ÇÉ«Ãû |
-| description | String |ÃèÊö |
+| id | Long | æ•°æ®ID |  
+| roleName | String | è§’è‰²å |
+| description | String |æè¿° |
 
 
 ```javascript
@@ -471,8 +473,8 @@ message | string | ´íÎóĞÅÏ¢
         "rows": [
             {
                 "id": 1,
-                "roleName": "ÏµÍ³¹ÜÀíÔ±",
-                "description": "ÏµÍ³¹ÜÀíÔ±",
+                "roleName": "ç³»ç»Ÿç®¡ç†å‘˜",
+                "description": "ç³»ç»Ÿç®¡ç†å‘˜",
             },
             {
                 "id": 2,
