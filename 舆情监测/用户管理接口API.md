@@ -26,42 +26,30 @@
 {
     "success": true,
     "data": {
-			"page": 0,
-			"total": 0,
-			"records": 0,
-			"rows": [
-				{
-					"page": 1,
-					"rows": 15,
-					"adminUser": {
-						"id": 11,
-						"userName": "admin3",
-						"name": "管理员",
-						"password": "1bbd886460827015e5d605ed44252251",
-						"mobile": "13111111111",
-						"administrator": true,
-						"roleIdList": null
-					},
-					"roleIdList": null,
-					"userRoleName": null
-				},
-				{
-					"page": 1,
-					"rows": 15,
-					"adminUser": {
-						"id": 10,
-						"userName": "admin2",
-						"name": "管理员",
-						"password": "1bbd886460827015e5d605ed44252251",
-						"mobile": "13111111111",
-						"administrator": true,
-						"roleIdList": null
-					},
-					"roleIdList": null,
-					"userRoleName": null
-				}
-			]
-		},
+        "page": 1,
+        "total": 1,
+        "records": 14,
+        "rows": [
+            {
+                "id": 1,
+                "userName": "admin",
+                "name": "管理员",
+                "password": "1bbd886460827015e5d605ed44252251",
+                "mobile": "13111111111",
+                "administrator": true,
+                "userRoleName": null
+            },
+            {
+                "id": 21,
+                "userName": "cs",
+                "name": "测试",
+                "password": "1bbd886460827015e5d605ed44252251",
+                "mobile": "13332211122",
+                "administrator": true,
+                "userRoleName": "cs"
+            }
+        ]
+    },
     "errorCode": null,
     "message": null
 }
@@ -363,7 +351,6 @@ message | string | 错误信息
 | - | - | - | - | - |
 | id | Long | Y | 数据ID |
 | password | String  | 密码  |
-| confirmPwd | String  | 确认密码  |
 
 
 #### 返回值
