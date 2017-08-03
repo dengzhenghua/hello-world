@@ -1,25 +1,25 @@
-#  ½ÇÉ«¹ÜÀí
-[TOC]³ğ¿­
-## 1. ½ÇÉ«¹ÜÀí
-### 1.1 ½ÇÉ«ÁĞ±í 
+#  è§’è‰²ç®¡ç†
+[TOC]ä»‡å‡¯
+## 1. è§’è‰²ç®¡ç†
+### 1.1 è§’è‰²åˆ—è¡¨ 
 | | |
 | - | - |
 | url | [/role/findRoleForPage](/role/findRoleForPage) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | 
+| name | type | mandatory | æè¿° | 
 | - | - | - | - | - |
-| userName | string | N | ²éÑ¯×Ö¶Î | 
+| userName | string | N | æŸ¥è¯¢å­—æ®µ | 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| page | string | Ã¿Ò³Êı |
-| total | string | ×ÜÒ³Êı|
-| records | string | ×ÜÌõÊı |
+| page | string | æ¯é¡µæ•° |
+| total | string | æ€»é¡µæ•°|
+| records | string | æ€»æ¡æ•° |
 | rows | object |  |
 
 ```javascript
@@ -32,11 +32,11 @@
 			"rows": [
 				{
 					"roleName":"cs1",
-					"description":"ÃèÊö1",
+					"description":"æè¿°1",
 				},
 				{
 					"roleName":"cs",
-					"description":"ÃèÊö",
+					"description":"æè¿°",
 				}
 			]
 		},
@@ -44,26 +44,26 @@
     "message": null
 }
 ```
-### 1.2 »ñÈ¡È¨ÏŞÁĞ±í 
+### 1.2 è·å–æƒé™åˆ—è¡¨ 
 | | |
 | - | - |
 | url | [/role/preparePermissionTree](/role/preparePermissionTree) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | È¡Öµ·¶Î§ |
+| name | type | mandatory | æè¿° | å–å€¼èŒƒå›´ |
 | - | - | - | - | - |
-| roleId | Long | N | ½ÇÉ«ID | ID |
-| nodeid | Long | Y | È¨ÏŞID | Ê×´Î²»´« |
+| roleId | Long | N | è§’è‰²ID | ID |
+| nodeid | Long | Y | æƒé™ID | é¦–æ¬¡ä¸ä¼  |
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
 | id | Long | id |
-| leaf | boolean | ÊÇ·ñÓĞÒ¶¼¶ |
-| parentId | Long | ¸¸¼¶ID |
+| leaf | boolean | æ˜¯å¦æœ‰å¶çº§ |
+| parentId | Long | çˆ¶çº§ID |
 
 ```javascript
 {
@@ -78,7 +78,7 @@
 				"isParent": false,
 				"leaf": true,
 				"level": 3,
-				"name": "Ê×Ò³",
+				"name": "é¦–é¡µ",
 				"open": false,
 				"parentId": 2,
 				"permissionType": 1
@@ -89,7 +89,7 @@
 				"isParent": false,
 				"leaf": false,
 				"level": 3,
-				"name": "ÏûÏ¢ÖĞĞÄ",
+				"name": "æ¶ˆæ¯ä¸­å¿ƒ",
 				"open": false,
 				"parentId": 2,
 				"permissionType": 1
@@ -101,25 +101,25 @@
     "message": null
 }
 ```
-### 1.3 ÅĞ¶Ï½ÇÉ«ÊÇ·ñÖØ¸´ 
+### 1.3 åˆ¤æ–­è§’è‰²æ˜¯å¦é‡å¤ 
 | | |
 | - | - |
 | url | [/role/validateRoleName](/role/validateRoleName) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö | È¡Öµ·¶Î§ |
+| name | type | mandatory | æè¿° | å–å€¼èŒƒå›´ |
 | - | - | - | - | - |
-| roleName | String | Y | ½ÇÉ«Ãû³Æ |  |
-| roleId | Long | N | id | ĞÂÔö²»´«£¬ĞŞ¸ÄĞèÒª´« |
+| roleName | String | Y | è§’è‰²åç§° |  |
+| roleId | Long | N | id | æ–°å¢ä¸ä¼ ï¼Œä¿®æ”¹éœ€è¦ä¼  |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| data | boolean | true²»´æÔÚ£¬falseÒÑ´æÔÚ |
+| data | boolean | trueä¸å­˜åœ¨ï¼Œfalseå·²å­˜åœ¨ |
 
 ```javascript
 {
@@ -130,26 +130,26 @@
 }
 ```
 
-### 1.4 ĞÂÔö 
+### 1.4 æ–°å¢ 
 | | |
 | - | - |
 | url | [/role/addRole](/role/addRole) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| addPermissionIds | String | N | ĞÂÔöÈ¨ÏŞID |
-| roleName | String | Y | ½ÇÉ«Ãû |
-| description | String | Y | ÃèÊö |
+| addPermissionIds | String | N | æ–°å¢æƒé™ID |
+| roleName | String | Y | è§’è‰²å |
+| description | String | Y | æè¿° |
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| roleName | String | ½ÇÉ«Ãû |
-| description | String |ÃèÊö |
+| roleName | String | è§’è‰²å |
+| description | String |æè¿° |
 
 ```javascript
 {
@@ -168,30 +168,30 @@
 }
 ```
 
-### 1.5  ĞŞ¸Ä
+### 1.5  ä¿®æ”¹
 
 | | |
 | - | - |
 | url | [/role/updateRole](/role/updateRole) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
 | id | Long | Y | id |
-| addPermissionIds | String | N | ĞÂÔöÈ¨ÏŞID |
-| deletePermissionIds | String | N | É¾³ıÈ¨ÏŞID |
-| roleName | String | Y | ½ÇÉ«Ãû |
-| description | String | Y | ÃèÊö |
+| addPermissionIds | String | N | æ–°å¢æƒé™ID |
+| deletePermissionIds | String | N | åˆ é™¤æƒé™ID |
+| roleName | String | Y | è§’è‰²å |
+| description | String | Y | æè¿° |
 
 
-#### ·µ»ØÖµ£¨²Ù×÷³É¹¦·µ»ØĞÅÏ¢Îª¿Õ£¬Ê§°Ü·µ»ØÒÔÏÂĞÅÏ¢£©
+#### è¿”å›å€¼ï¼ˆæ“ä½œæˆåŠŸè¿”å›ä¿¡æ¯ä¸ºç©ºï¼Œå¤±è´¥è¿”å›ä»¥ä¸‹ä¿¡æ¯ï¼‰
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| roleName | String |  ½ÇÉ«Ãû |
-| description | String |  ÃèÊö |
+| roleName | String |  è§’è‰²å |
+| description | String |  æè¿° |
 
 ```javascript
 {
@@ -210,28 +210,28 @@
 }
 ```
 
-### 1.6 ¸´ÖÆ 
+### 1.6 å¤åˆ¶ 
 | | |
 | - | - |
 | url | [/role/copyAddRole](/role/copyAddRole) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| addPermissionIds | String | N | ĞÂÔöÈ¨ÏŞID |
-| deletePermissionIds | String | N | É¾³ıÈ¨ÏŞID |
-| roleName | String | Y | ½ÇÉ«Ãû |
-| description | String | Y | ÃèÊö |
+| addPermissionIds | String | N | æ–°å¢æƒé™ID |
+| deletePermissionIds | String | N | åˆ é™¤æƒé™ID |
+| roleName | String | Y | è§’è‰²å |
+| description | String | Y | æè¿° |
 
 
-#### ·µ»ØÖµ£¨²Ù×÷³É¹¦·µ»ØĞÅÏ¢Îª¿Õ£¬Ê§°Ü·µ»ØÒÔÏÂĞÅÏ¢£©
+#### è¿”å›å€¼ï¼ˆæ“ä½œæˆåŠŸè¿”å›ä¿¡æ¯ä¸ºç©ºï¼Œå¤±è´¥è¿”å›ä»¥ä¸‹ä¿¡æ¯ï¼‰
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| roleName | String | ½ÇÉ«Ãû |
-| description | String | ÃèÊö |
+| roleName | String | è§’è‰²å |
+| description | String | æè¿° |
 
 ```javascript
 {
@@ -250,29 +250,29 @@
 }
 ```
 
-### 1.7 µ¥Ìõ²éÑ¯ 
+### 1.7 å•æ¡æŸ¥è¯¢ 
 
 | | |
 | - | - |
 | url | [/role/gotoEditPage](/role/gotoEditPage) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| id |Long | Y | ¸ü¾ßÊı¾İID²éÑ¯ |
+| id |Long | Y | æ›´å…·æ•°æ®IDæŸ¥è¯¢ |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| id | Long | Êı¾İID |  
-| roleName | String  | ½ÇÉ«Ãû |
-| description | String | ÃèÊö |
-| roleId | Long  | Êı¾İid |
-| permissionId | Long  | È¨ÏŞid |
+| id | Long | æ•°æ®ID |  
+| roleName | String  | è§’è‰²å |
+| description | String | æè¿° |
+| roleId | Long  | æ•°æ®id |
+| permissionId | Long  | æƒé™id |
 
 
 ```javascript
@@ -281,8 +281,8 @@
     "data": {
         "role": {
             "id": 1,
-            "roleName": "ÏµÍ³¹ÜÀíÔ±",
-            "description": "ÏµÍ³¹ÜÀíÔ±",
+            "roleName": "ç³»ç»Ÿç®¡ç†å‘˜",
+            "description": "ç³»ç»Ÿç®¡ç†å‘˜",
         },
         "permissionList": [
             {
@@ -300,56 +300,56 @@
 }
 ```
 
-### 1.7 ¶àÌõÉ¾³ı 
+### 1.7 å¤šæ¡åˆ é™¤ 
 | | |
 | - | - |
 | url | [/role/deleteRoleByIds](/role/deleteRoleByIds) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
 | ids | List Long | Y | 
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| errorCode | string | ´íÎó±àÂë |
-| expLevel | string | ´íÎóµÈ¼¶ |
-| message | string | ´íÎóĞÅ
+| errorCode | string | é”™è¯¯ç¼–ç  |
+| expLevel | string | é”™è¯¯ç­‰çº§ |
+| message | string | é”™è¯¯ä¿¡
 
 
 ```javascript
 {
     "success": true,
-    "data": "²Ù×÷³É¹¦£¡",
+    "data": "æ“ä½œæˆåŠŸï¼",
     "errorCode": "",
     "message": ""
 }
 ```
 
-### 1.8 µ¥ÌõÉ¾³ı 
+### 1.8 å•æ¡åˆ é™¤ 
 | | |
 | - | - || url | [/role/deleteRoleById](/role/deleteRoleById) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
 | id |Long | Y | id |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-success | boolean | ³É¹¦Óë·ñ
-errorCode | string | ´íÎó±àÂë
-message | string | ´íÎóĞÅÏ¢
+success | boolean | æˆåŠŸä¸å¦
+errorCode | string | é”™è¯¯ç¼–ç 
+message | string | é”™è¯¯ä¿¡æ¯
 
 ```javascript
 {
@@ -360,25 +360,25 @@ message | string | ´íÎóĞÅÏ¢
 }
 ```
 
-### 1.9  ²é¿´
+### 1.9  æŸ¥çœ‹
 | | |
 | - | - |
 | url | [/role/gotoViewPage](/role/gotoViewPage) | 
 | method | POST | 
 
-#### ²ÎÊı
+#### å‚æ•°
 
-| name | type | mandatory | ÃèÊö |
+| name | type | mandatory | æè¿° |
 | - | - | - | - | - |
-| id | Long | Y | Êı¾İID |
+| id | Long | Y | æ•°æ®ID |
 
 
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-| name | type | ÃèÊö |
+| name | type | æè¿° |
 | :-: | :-: | :-: |
-| roleName | String | ½ÇÉ«Ãû |
-| description | String | ÃèÊö |
+| roleName | String | è§’è‰²å |
+| description | String | æè¿° |
 
 
 ```javascript
@@ -390,55 +390,8 @@ message | string | ´íÎóĞÅÏ¢
         "createDate": "2016-12-06 09:22:00",
         "updateUser": "admin",
         "updateDate": "2016-12-06 09:22:00",
-        "roleName": "ÏµÍ³¹ÜÀíÔ±",
-        "description": "ÏµÍ³¹ÜÀíÔ±",
-    },
-    "errorCode": null,
-    "message": null
-}
-```
-
-### 1.9  
-| | |
-| - | - |
-| url | [/role/getAdminUserRoleList](/role/getAdminUserRoleList) | 
-| method | POST | 
-
-#### ²ÎÊı
-
-| name | type | mandatory | ÃèÊö |
-| - | - | - | - | - |
-| id | Long | Y | Êı¾İID |
-
-
-#### ·µ»ØÖµ
-
-| name | type | ÃèÊö |
-| :-: | :-: | :-: |
-| id | Long | Êı¾İID |  
-| userName | string | ÓÃ»§Ãû³Æ |
-| name | string | ÓÃ»§Ãû³Æ |
-| password | String  | ÃÜÂë  |
-| mobile | String | µç»° | 
-| administrator | boolean  | ÊÇ·ñ¹ÜÀíÔ± | 
-| roleIdList | String  | ½ÇÉ«id | 
-
-
-```javascript
-{
-    "success": true,
-    "data": {
-        "page": 1,
-        "rows": 15,
-        "adminUser": {
-            "id": 1,
-            "userName": "admin",
-            "name": "¹ÜÀíÔ±",
-            "password": "1bbd886460827015e5d605ed44252251",
-            "mobile": "13111111111",
-            "administrator": true
-        },
-        "roleIdList": "1,2"
+        "roleName": "ç³»ç»Ÿç®¡ç†å‘˜",
+        "description": "ç³»ç»Ÿç®¡ç†å‘˜",
     },
     "errorCode": null,
     "message": null
