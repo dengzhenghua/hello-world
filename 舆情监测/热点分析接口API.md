@@ -96,15 +96,40 @@
 
 | name | type | 描述 |
 | :-: | :-: | :-: |
-| profileImageUrl | Map | key名称，value值 |
+| hotKeyWordsAnalysisList | Map | key日期，value值 |
+| hotKeyWordsAnalysis | Map | key监测词，value值 |
 
 
 ```javascript
 {
     "success": true,
     "data": {
-        "qqq": "222",
-        "ww": "333"
+        "hotKeyWordsAnalysisList": [
+            {
+                "2017-07-26": 0,
+                "2017-07-27": 0,
+                "2017-07-28": 0,
+                "2017-07-29": 0,
+                "2017-07-30": 0,
+                "2017-07-31": 0,
+                "2017-08-01": 0,
+                "2017-08-02": 13
+            },
+            {
+                "2017-07-26": 0,
+                "2017-07-27": 0,
+                "2017-07-28": 0,
+                "2017-07-29": 0,
+                "2017-07-30": 0,
+                "2017-07-31": 0,
+                "2017-08-01": 0,
+                "2017-08-02": 13
+            }
+        ],
+        "hotKeyWordsAnalysis": {
+            "杭州": 29,
+            "消防": 26
+        }
     },
     "errorCode": null,
     "message": null
