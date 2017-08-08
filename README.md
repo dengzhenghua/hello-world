@@ -27,3 +27,9 @@
 ```bash
 git clone ssh://git@gitlab.hztianque.com:22016/docs/api-docs.git
 ```
+
+## 统一搜索
+
+-  [开发文档](http://gitlab.hztianque.com/docs/api-docs/blob/master/es%E5%90%8E%E5%8F%B0%E9%85%8D%E7%BD%AE/01_%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md)
+-  [接口文档](http://gitlab.hztianque.com/docs/api-docs/blob/master/es%E5%90%8E%E5%8F%B0%E9%85%8D%E7%BD%AE/02_%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3.md)
+-  [操作手册](http://gitlab.hztianque.com/docs/api-docs/blob/master/es%E5%90%8E%E5%8F%B0%E9%85%8D%E7%BD%AE/03_%E4%B8%9A%E5%8A%A1%E6%96%87%E6%A1%A3.md)
