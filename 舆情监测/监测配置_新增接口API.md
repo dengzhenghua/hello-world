@@ -12,6 +12,7 @@
 | name | type | mandatory | 描述 | 
 | - | - | - | - | - |
 | configType | Long | N | 爬虫配置：1，主数据配置分类：2 | 
+| programmeId | Long | Y | 方案ID |
 
 #### 返回值
 
