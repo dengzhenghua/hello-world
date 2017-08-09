@@ -48,6 +48,7 @@
 
 | name | type | mandatory | 描述 | 
 | - | - | - | - | - |
+| programmeId | Long | Y | 方案ID | 
 
 #### 返回值
 
